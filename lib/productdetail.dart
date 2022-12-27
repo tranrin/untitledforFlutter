@@ -47,7 +47,7 @@ class checktam{
   static List<Images> imagecheck=[Images(IDDetailImage: 0,IDProduct: 0,URlImage: ""),];
   static Product productcheck=Product(description: "",idProduct: 0,nameCategory: "",nameFactory: "",nameProduct: "");
   static List<DetailProduct> detailproductcheck=[DetailProduct(IDProduct: 0,ColorCode: "",ColorName: "",IDDetailproduct: 0,Price: 0,SpecificationProduct: "",Stock: 0)];
-  static List<CommentRate> commentratecheck=[CommentRate(IDProduct: 0,CommentDate: "",Content: "",IDComment: 0,IDUser: 0,Rate: 0)];
+  static List<CommentRate> commentratecheck=[CommentRate(IDProduct: 0,CommentDate: DateTime.now(),Content: "",IDComment: 0,IDUser: 0,Rate: 0)];
   static detailproductresponse tam=detailproductresponse(product: productcheck, imageList:imagecheck , detailProductList: detailproductcheck, listCommentRate: commentratecheck);
   static detailproductresponse globalvar=tam;
   static Future<detailproductresponse> fetchData (int id,BuildContext context)  async {

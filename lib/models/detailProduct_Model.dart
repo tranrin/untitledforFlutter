@@ -95,7 +95,7 @@ class CommentRate{
   late int? IDComment;
   late int? IDProduct;
   late String? Content;
-  late String? CommentDate;
+  late DateTime? CommentDate;
   late double? Rate;
   late int? IDUser;
   CommentRate({this.IDComment,this.IDProduct,this.Content,this.CommentDate,this.Rate,this.IDUser});
@@ -104,7 +104,7 @@ class CommentRate{
       IDComment: obj['idComment'],
       IDProduct: obj['idProduct'],
       Content: obj['content'],
-      CommentDate: obj['commentDate'],
+      CommentDate: DateTime.parse(obj['commentDate']),
       Rate: obj['rate'],
       IDUser: obj['idUser'],
 

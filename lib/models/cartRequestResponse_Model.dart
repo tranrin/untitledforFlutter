@@ -15,7 +15,7 @@ class detailproductresponse {
   List<Images> imageList=[];
 
   late List<DetailProduct> detailProductList=[DetailProduct(IDProduct: 0,ColorCode: "",ColorName: "",IDDetailproduct: 0,Price: 0,SpecificationProduct: "",Stock: 0)];
-  late List<CommentRate> listCommentRate=[CommentRate(IDProduct: 0,CommentDate: "",Content: "",IDComment: 0,IDUser: 0,Rate: 0)];
+  late List<CommentRate> listCommentRate=[CommentRate(IDProduct: 0,CommentDate: DateTime.now(),Content: "",IDComment: 0,IDUser: 0,Rate: 0)];
   detailproductresponse({required this.product,required this.imageList,required this.detailProductList,required this.listCommentRate});
 
   factory detailproductresponse.fromJson(Map<String,dynamic> obj){
